@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-8">
+        <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="text text-success text-center mb-5 mt-5">Welcome to University of Greenwich</h1>
+        <iframe style="margin-left:90px ;" width="560" height="315"
+            src="https://www.youtube.com/embed/ZsBJPaHnESY?si=kuYmqCWuy5oMapVC" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RkuzB3qSHa0?si=FsOocoR1Uv7CDXY8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <h2 class="mb-5 mt-5">Campus of University of Greenwich</h2>
+
+        <select class="form-select" id="campusSelect" aria-label="Default select example">
+            <option selected>Select Campus</option>
+            <option value="1">Ha Noi</option>
+            <option value="2">Ho Chi Minh</option>
+            <option value="3">Can Tho</option>
+            <option value="4">Da Nang</option>
+        </select>
+
+
+        <div class="container my-5">
+
+            <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    
+                <div class="container pt-4">
+              
+                    <section class="mb-4">
+                       
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                       
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                       
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                       
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                      
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                    
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                    </section>
+                    
+                </div>
+              
+
+               
+                <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2023 Copyright:
+                    <a class="text-dark" href="/">Anh Quan</a>
+                </div>
+             
+            </footer>
+
+        </div>
+       
+    </div>
+
+    <script>
+        // Get the select element
+        var select = document.getElementById("campusSelect");
+    
+        // Add an event listener to listen for changes in selection
+        select.addEventListener("change", function() {
+            // Get the selected option's value
+            var selectedOption = select.value;
+    
+            // Define the URLs for each option
+            var optionUrls = {
+                "1": "hn",
+                "2": "hcm",
+                "3": "ct",
+                "4": "dn"
+            };
+    
+            // Redirect to the selected option's URL
+            if (selectedOption in optionUrls) {
+                window.location.href = optionUrls[selectedOption];
+            }
+        });
+    </script>
+</body>
+
+</html>
